@@ -14,6 +14,9 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 // ! Rutas
 import { appRouting } from './app.routes';
 
+import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,9 @@ import { appRouting } from './app.routes';
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    PagesComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
