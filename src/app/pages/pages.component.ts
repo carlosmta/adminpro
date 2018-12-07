@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+  cadena: string;
+
   constructor() { }
 
   ngOnInit() {
