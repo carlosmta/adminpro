@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 // ! componente principal
 import { PagesComponent } from './pages.component';
@@ -12,17 +13,24 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 
+// * temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+
+
+
 
 @NgModule({
     imports: [
         BrowserModule,
         SharedModule,
-        PAGES_ROUTES ],
+        PAGES_ROUTES,
+        FormsModule ],
     declarations: [
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        PagesComponent
+        PagesComponent,
+        IncrementadorComponent
     ],
     exports: [
         DashboardComponent,
