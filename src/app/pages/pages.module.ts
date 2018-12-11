@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 // ! componente principal
 import { PagesComponent } from './pages.component';
 
+// graficas
+import { ChartsModule } from 'ng2-charts';
+
 // * componentes secundarios
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -24,7 +27,9 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         BrowserModule,
         SharedModule,
         PAGES_ROUTES,
-        FormsModule ],
+        FormsModule,
+        ChartsModule
+     ],
     declarations: [
         DashboardComponent,
         ProgressComponent,
