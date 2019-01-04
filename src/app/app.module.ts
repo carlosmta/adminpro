@@ -12,6 +12,9 @@ import { appRouting } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
 
+// ! Providers
+import { ServiceModule } from './services/service.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     appRouting,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
